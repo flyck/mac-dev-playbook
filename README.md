@@ -18,7 +18,8 @@
      defaults write com.apple.dock persistent-apps -array
      killall Dock
      ```
-  4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required
+     Ansible roles. They allow automatic installation of homebrew packages and more.
   5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS
      account password when prompted for the 'BECOME' password.
      - Casks might need to be commented out temporarily because of:
