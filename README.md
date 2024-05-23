@@ -14,7 +14,11 @@
   3. Clone or download this repository to your local drive:
      `mkdir git; cd git; git clone https://github.com/flyck/mac-dev-playbook.git`
   4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-  5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
+  5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS
+     account password when prompted for the 'BECOME' password.
+     - Casks might need to be commented out temporarily because of:
+       https://github.com/geerlingguy/mac-dev-playbook/issues/196
+     - Then, add brew to your path: `export PATH="/opt/homebrew/bin:$PATH"`and run `brew update`.
 
 ## Goals
 
