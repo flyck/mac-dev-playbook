@@ -40,7 +40,7 @@
   - git global config
   - setup git/ folder
   - download 6 most recently contributed github projects
-- Javascript Dev
+- [ ] Javascript Dev
   - Node
     - bun install
     - fnm install
@@ -55,4 +55,4 @@
   - killall Dock
   - brew install dockutil
   - dockutil add emacs ...
-- wallpaper
+- [ ] wallpaper
