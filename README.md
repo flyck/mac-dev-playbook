@@ -5,6 +5,10 @@
   1. Go to this repo with Safari on the new laptop
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
   2. Go to python.org/download and download the python installer. Install manually
+  3. Install the SSL certificates for python.
+     ```sh
+     /Application/Python... /Install\ Certificates.command
+     ```
   2. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html):
      3. Install Ansible: `pip3 install ansible`
   3. Clone or download this repository to your local drive:
