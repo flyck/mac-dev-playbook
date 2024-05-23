@@ -42,6 +42,7 @@ homebrew_installed_packages:
   - emacs
   - aspell
   - the_silver_searcher
+  - stats
   - make
   - diffutils
 
@@ -60,6 +61,8 @@ homebrew_cask_apps:
   - visual-studio-code
   - stats
   - adobe-acrobat-reader
+  - rectangle
+  - grandperspective
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
