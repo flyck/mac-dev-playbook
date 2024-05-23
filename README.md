@@ -28,12 +28,15 @@
 
 ## Goals
 
-- Have homebrew apps automatically installed
+- [x] Have central homebrew apps automatically installed
   - zsh
   - vscode
   - git
-- Setup iterm2
-- Git setup
+- [ ] Setup iterm2
+  - zsh config
+  - iterm profile with important settings
+  - iterm color schemes
+- [ ] Git setup
   - git global config
   - setup git/ folder
   - download 6 most recently contributed github projects
@@ -41,12 +44,13 @@
   - Node
     - bun install
     - fnm install
-- Emacs setup
-  - brew install emacs
+    - set an fnm default version (download it)
+- [ ] Emacs config setup
+  - [ ] brew install emacs
   - download config
-  - ispell
-  - ag search
-- Dock setup
+  - [x] ispell
+  - [x] ag search
+- [x] Dock setup
   - defaults write com.apple.dock persistent-apps -array
   - killall Dock
   - brew install dockutil
