@@ -7,14 +7,8 @@ configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
-dockitems_remove: ["all"]
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-- name: "Finder"
-  pos: 1
+dockitems_remove: []
+dockitems_persist:
 - name: "Google Chrome"
   path: "/Applications/Google Chrome.app"
   pos: 2
@@ -27,10 +21,6 @@ dockitems_persist: []
 - name: "iTerm"
   path: "/Applications/iTerm.app"
   pos: 5
-
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
 
 configure_sudoers: false
 sudoers_custom_config: ''
