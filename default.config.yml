@@ -39,7 +39,6 @@ homebrew_installed_packages:
   - readline
   - openssl
   - wget
-  - emacs
   - aspell
   - the_silver_searcher
   - stats
