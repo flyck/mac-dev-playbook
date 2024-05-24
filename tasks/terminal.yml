@@ -1,0 +1,11 @@
+---
+- name: Get Dotfiles
+  git:
+    repo: https://github.com/flyck/dotfiles.git
+    dest: ~/dotfiles
+    update: yes
+
+- name: Copy .zshrc
+  copy:
+    src: ~/dotfiles/.zshrc
+    dest: ~/.zshrc

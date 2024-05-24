@@ -22,3 +22,8 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+
+  tasks:
+    - import_tasks: tasks/terminal.yml
+      when: configure_terminal
+      tags: ['terminal']
