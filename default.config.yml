@@ -51,7 +51,8 @@ homebrew_installed_packages:
   - diffutils
   - emacs-plus@29
 
-homebrew_taps: []
+homebrew_taps:
+  - d12frosted/emacs-plus
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
