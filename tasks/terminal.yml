@@ -15,14 +15,34 @@
     src: ~/dotfiles/.zshrc
     dest: ~/.zshrc
 
+# trying to import that the dynamical profile folder gave an error
 - name: Copy iterm profile
   copy:
     src: files/terminal/profile.json
-    dest: ~/Library/Application Support/iTerm2/DynamicProfiles/Felix.json
+    dest: ~/Desktop/iterm_profile.json
 
 - name: Only import themes once
   stat: path=.themes_installed
   register: themes_installed
+
+- name: Get Font for starship prompt
+  block:
+  - name: Ensure fonts directory
+    file:
+      path: "{{ lookup('env', 'HOME') }}/.fonts"
+      state: directory
+
+  - name: Hack exists
+    shell: "ls {{ lookup('env', 'HOME') }}/.fonts/Hack*Nerd*Font*Complete*"
+    register: hack_exists
+    ignore_errors: yes
+
+  - name: Download Hack
+    when: hack_exists is failed
+    ansible.builtin.unarchive:
+      src: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+      dest: "{{ lookup('env', 'HOME') }}/.fonts/"
+      remote_src: yes
 
 - name: Get terminal themes
   when: themes_installed.stat.exists == False
