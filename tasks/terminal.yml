@@ -15,22 +15,24 @@
     src: ~/dotfiles/.zshrc
     dest: ~/.zshrc
 
-- name: Get themes
-  git:
-    repo: https://github.com/mbadolato/iTerm2-Color-Schemes
-    dest: /tmp/iterm2-color-schemes
-
-- name: Only import themes once
-  stat: path=.themes_installed
-  register: themes_installed
-
-- name: Import Iterm2 themes
-  shell: tools/import-scheme.sh schemes/*
-  args:
-    chdir: /tmp/iterm2-color-schemes
+- name: Get terminal themes
   when: themes_installed.stat.exists == False
+  block:
+    - name: Get the theme color repo
+      git:
+        repo: https://github.com/mbadolato/iTerm2-Color-Schemes
+        dest: /tmp/iterm2-color-schemes
 
-- name: Creating an empty file
-  file:
-    path: ".themes_installed"
-    state: touch
+    - name: Only import themes once
+      stat: path=.themes_installed
+      register: themes_installed
+
+    - name: Import Iterm2 themes
+      shell: tools/import-scheme.sh schemes/*
+      args:
+        chdir: /tmp/iterm2-color-schemes
+
+    - name: Creating an empty file
+      file:
+        path: ".themes_installed"
+        state: touch
