@@ -9,7 +9,7 @@ configure_osx: true
 configure_dock: true
 dockitems_remove: []
 dockitems_persist:
-- name: "Google%20Chrome"
+- name: "Google Chrome"
   path: "/Applications/Google Chrome.app"
   pos: 2
 - name: "Emacs"
