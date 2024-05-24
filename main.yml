@@ -27,3 +27,6 @@
     - import_tasks: tasks/terminal.yml
       when: configure_terminal
       tags: ['terminal']
+
+    - import_tasks: tasks/system.yml
+      tags: ['system']

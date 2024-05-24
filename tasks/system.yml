@@ -1,0 +1,13 @@
+---
+- name: Only import themes once
+  stat: path=.system_configured
+  register: system_configured
+
+- name: Autohide the dock
+  shell: defaults write com.apple.dock "autohide" -bool "true" && killall Dock
+  when: system_configured.stat.exists == False
+
+- name: Creating an empty file
+  file:
+    path: ".system_configured"
+    state: touch
