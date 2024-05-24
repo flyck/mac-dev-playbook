@@ -18,7 +18,11 @@
 - name: Copy iterm profile
   copy:
     src: files/terminal/profile.json
-    dest: ~/Library/Application\ Support/iTerm2/DynamicProfiles/Felix.json
+    dest: ~/Library/Application Support/iTerm2/DynamicProfiles/Felix.json
+
+- name: Only import themes once
+  stat: path=.themes_installed
+  register: themes_installed
 
 - name: Get terminal themes
   when: themes_installed.stat.exists == False
@@ -27,10 +31,6 @@
       git:
         repo: https://github.com/mbadolato/iTerm2-Color-Schemes
         dest: /tmp/iterm2-color-schemes
-
-    - name: Only import themes once
-      stat: path=.themes_installed
-      register: themes_installed
 
     - name: Import Iterm2 themes
       shell: tools/import-scheme.sh schemes/*
