@@ -1,17 +1,6 @@
 ---
-- name: Only import themes once
-  stat: path=.system_configured
-  register: system_configured
-
 - name: Autohide the dock
   shell: defaults write com.apple.dock "autohide" -bool "true" && killall Dock
-  when: system_configured.stat.exists == False
 
 - name: Show hidden files in finder
   shell: defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder
-  when: system_configured.stat.exists == False
-
-- name: Creating an empty file
-  file:
-    path: ".system_configured"
-    state: touch
