@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/flyck/mac-dev-playbook/master/.assets/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
+
 # Mac Dev Playbook
 
 ## Installation
@@ -25,6 +27,7 @@
      - Casks might need to be commented out temporarily because of:
        https://github.com/geerlingguy/mac-dev-playbook/issues/196
      - Then, add brew to your path: `export PATH="/opt/homebrew/bin:$PATH"`and run `brew update`.
+     - Finally comment then back in, and the ansible playbook should succeed
 
 ## Goals
 
@@ -56,3 +59,8 @@
   - brew install dockutil
   - dockutil add emacs ...
 - [ ] wallpaper
+
+## Special Thanks
+
+Thanks to the inspiration and underlying ansible roles from geerlingguy's
+[mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook).
