@@ -49,6 +49,7 @@ homebrew_installed_packages:
   - stats
   - make
   - diffutils
+  - emacs-plus@29
 
 homebrew_taps: []
 
