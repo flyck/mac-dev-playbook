@@ -9,18 +9,21 @@ configure_osx: true
 configure_dock: true
 dockitems_remove: []
 dockitems_persist:
-- name: "Google Chrome"
+- name: "Google%20Chrome"
   path: "/Applications/Google Chrome.app"
   pos: 2
+- name: "Emacs"
+  path: "/opt/homebrew/Cellar/emacs-plus@29/29.3/Emacs.app"
+  pos: 3
 - name: "Slack"
   path: "/Applications/Slack.app"
-  pos: 3
+  pos: 4
 - name: "GrandPerspective"
   path: "/Applications/GrandPerspective.app"
-  pos: 4
+  pos: 5
 - name: "iTerm"
   path: "/Applications/iTerm.app"
-  pos: 5
+  pos: 6
 
 configure_sudoers: false
 sudoers_custom_config: ''
