@@ -52,6 +52,7 @@ homebrew_installed_packages:
   - make
   - diffutils
   - emacs-plus@29
+  - starship
 
 homebrew_taps:
   - d12frosted/emacs-plus
