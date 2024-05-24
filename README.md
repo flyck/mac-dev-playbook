@@ -28,6 +28,8 @@
        https://github.com/geerlingguy/mac-dev-playbook/issues/196
      - Then, add brew to your path: `export PATH="/opt/homebrew/bin:$PATH"`and run `brew update`.
      - Finally comment then back in, and the ansible playbook should succeed
+  6. Enable rectangle (the window manager) by starting it manually and giving the systems
+     permissions
 
 ## Goals
 
