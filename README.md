@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/flyck/mac-dev-playbook/master/.assets/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
+<img src="https://raw.githubusercontent.com/flyck/mac-dev-playbook/main/.assets/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
 
 # Mac Dev Playbook
 
