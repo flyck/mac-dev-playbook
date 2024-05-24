@@ -30,12 +30,13 @@
      - Finally comment then back in, and the ansible playbook should succeed
   6. Enable rectangle (the window manager) by starting it manually and giving the systems
      permissions.
+  7. Add the users home to the favorites:
+     - Press shift-command-G to bring up "go to folder". Select `~`
+     - Add it to favorites via control-command-T
+  6. Install the downloaded font in ~/.fonts by double-clicking it
   7. Import the iterm profile on the desktop in iterm and set it as the default.
   8. Log into Dropbox
   9. Import the bookmarks into chrome from Dropbox
-  10. Add the users home to the favorites:
-     - Press shift-command-G to bring up "go to folder". Select `~`
-     - Add it to favorites via control-command-T
 
 ## Goals
 
@@ -43,7 +44,7 @@
   - zsh
   - vscode
   - git
-- [ ] Setup iterm2
+- [x] Setup iterm2
   - zsh config
   - iterm profile with important settings
   - iterm color schemes
@@ -66,7 +67,7 @@
   - killall Dock
   - brew install dockutil
   - dockutil add emacs ...
-- [ ] wallpaper
+- [ ] Wallpaper
 
 ## Special Thanks
 
