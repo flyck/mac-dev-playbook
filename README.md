@@ -29,7 +29,10 @@
      - Then, add brew to your path: `export PATH="/opt/homebrew/bin:$PATH"`and run `brew update`.
      - Finally comment then back in, and the ansible playbook should succeed
   6. Enable rectangle (the window manager) by starting it manually and giving the systems
-     permissions
+     permissions.
+  7. Import the iterm profile on the desktop in iterm and set it as the default.
+  8. Log into Dropbox
+  9. Import the bookmarks into chrome from Dropbox
 
 ## Goals
 
