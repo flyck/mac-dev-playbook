@@ -53,9 +53,12 @@ homebrew_installed_packages:
   - diffutils
   - emacs-plus@29
   - starship
+  - mactex
+  - oven-sh/bun/bun
 
 homebrew_taps:
   - d12frosted/emacs-plus
+  - oven-sh/bun
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
