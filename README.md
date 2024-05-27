@@ -30,11 +30,14 @@
      - Finally comment then back in, and the ansible playbook should succeed
   6. Enable rectangle (the window manager) by starting it manually and giving the systems
      permissions.
+  7. Enable stats by opening it once and giving it the appropriate permissions
   7. Add the users home to the favorites:
      - Press shift-command-G to bring up "go to folder". Select `~`
      - Add it to favorites via control-command-T
+  8. Start emacs and have all the packages installed.
+  9. Remove the ^Space mac keybinding in the system menu (interferes with emacs keybinding)
   6. Install the downloaded font in ~/.fonts by double-clicking it
-  7. Import the iterm profile on the desktop in iterm and set it as the default.
+  7. Import the iterm profile on the desktop in iterm and set it as the default. (depends on font)
   8. Log into Dropbox
   9. Import the bookmarks into chrome from Dropbox
 
