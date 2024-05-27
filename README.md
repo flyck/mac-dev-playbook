@@ -51,18 +51,18 @@
   - zsh config
   - iterm profile with important settings
   - iterm color schemes
-- [ ] Git setup
+- [x] Git setup
   - git global config
   - setup git/ folder
   - download 6 most recently contributed github projects
-- [ ] Javascript Dev
+- [x] Javascript Dev
   - Node
     - bun install
     - fnm install
     - set an fnm default version (download it)
-- [ ] Emacs config setup
-  - [ ] brew install emacs
-  - download config
+- [x] Emacs config setup
+  - [x] brew install emacs
+  - [x] download config
   - [x] ispell
   - [x] ag search
 - [x] Dock setup
@@ -70,6 +70,7 @@
   - killall Dock
   - brew install dockutil
   - dockutil add emacs ...
+- [ ] Chrome addons
 - [ ] Wallpaper
 
 ## Special Thanks
