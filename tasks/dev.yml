@@ -1,0 +1,7 @@
+---
+- name: Configure emacs
+  block:
+    - name: Get the emacs repo
+      git:
+        repo: https://github.com/flyck/.emacs.d
+        dest: ~/.emacs.d

@@ -30,3 +30,6 @@
 
     - import_tasks: tasks/system.yml
       tags: ['system']
+
+    - import_tasks: tasks/dev.yml
+      tags: ['dev']
