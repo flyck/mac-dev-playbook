@@ -5,3 +5,32 @@
       git:
         repo: https://github.com/flyck/.emacs.d
         dest: ~/.emacs.d
+
+- name: Install node version
+  command: fnm install 22
+
+- name: Set default node version
+  command: fnm default 22
+
+- name: Check if projects file exist to avoid rate limiting
+  stat:
+    path: .github_projects.json
+  register: github_projects
+
+- name: Get latest projects
+  uri:
+    url: https://api.github.com/users/flyck/repos?sort=updated&per_page=6
+    dest: .github_projects.json
+  when: github_projects.stat.exists == False
+
+- name: Get the cached projects file
+  ansible.builtin.slurp:
+    src: .github_projects.json
+  register: projects_file
+
+- name: Clone each pinned repository
+  git:
+    repo: "{{ item.ssh_url }}"
+    dest: "~/git/{{ item.name }}"
+  loop: "{{ projects_file['content'] | b64decode | from_json }}"
+  when: item.ssh_url is defined
