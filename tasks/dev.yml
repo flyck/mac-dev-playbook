@@ -12,6 +12,9 @@
 - name: Set default node version
   command: fnm default 22
 
+- name: Setup Chrome extensions
+  command: sh files/chrome/extensions.sh
+
 - name: Check if projects file exist to avoid rate limiting
   stat:
     path: .github_projects.json

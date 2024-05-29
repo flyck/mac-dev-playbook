@@ -29,8 +29,10 @@
      - Then, add brew to your path: `export PATH="/opt/homebrew/bin:$PATH"`and run `brew update`.
      - Finally comment then back in, and the ansible playbook should succeed
   6. Enable rectangle (the window manager) by starting it manually and giving the systems
-     permissions.
-  7. Enable stats by opening it once and giving it the appropriate permissions
+     permissions. Configure it to start on login.
+  7. Enable stats by opening it once and giving it the appropriate permissions. Configure it to
+     start on login.
+  8. Restart Chrome and activate all automatically added plugins.
   7. Add the users home to the favorites:
      - Press shift-command-G to bring up "go to folder". Select `~`
      - Add it to favorites via control-command-T
