@@ -15,6 +15,7 @@ EXTlist=("adblock-—-block-ads-acros=gighmmpiobklfepjocnamgkkbiglidom"
          "react-developer-tools=fmkadmapgofadopljbjfkapdkoienihi"
          "web-vitals=ahfhijdlegdabablpippeagghigmibma"
          "wappalyzer-technology-pro=gppongmhjkpfnbhagpmjfkannfbllamg"
+         "bitwarden-password-manage=nngceckbapebfimnlniiiahkandclblb"
         )
 
 # Remove leftover files from previous script runs
