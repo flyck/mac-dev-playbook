@@ -55,6 +55,7 @@ homebrew_installed_packages:
   - starship
   - mactex
   - oven-sh/bun/bun
+  - discord
 
 homebrew_taps:
   - d12frosted/emacs-plus
