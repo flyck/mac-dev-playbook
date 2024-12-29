@@ -1,3 +1,4 @@
+
 <img src="https://raw.githubusercontent.com/flyck/mac-dev-playbook/main/.assets/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
 
 # Mac Dev Playbook
@@ -33,6 +34,7 @@
   7. Enable stats by opening it once and giving it the appropriate permissions. Configure it to
      start on login.
   8. Restart Chrome and activate all automatically added plugins.
+  9. Start docker and configure it to start on login
   7. Add the users home to the favorites:
      - Press shift-command-G to bring up "go to folder". Select `~`
      - Add it to favorites via control-command-T
@@ -72,8 +74,8 @@
   - killall Dock
   - brew install dockutil
   - dockutil add emacs ...
-- [ ] Chrome addons
-- [ ] Wallpaper
+- [x] Chrome addons
+- [ ] aws cli
 
 ## Special Thanks
 
