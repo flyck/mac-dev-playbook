@@ -13,7 +13,7 @@
      ```sh
      /Application/Python... /Install\ Certificates.command
      ```
-     3. Install Ansible: `pip3 install ansible`
+     3. Install Ansible (from home directory): `python3 -m pip install --user ansible`
   3. Clone or download this repository to your local drive:
      `mkdir git; cd git; git clone https://github.com/flyck/mac-dev-playbook.git`
   3. Remove all existing dock icons
