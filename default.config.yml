@@ -47,6 +47,7 @@ homebrew_installed_packages:
   - openssl
   - wget
   - aspell
+  - ripgrep
   - the_silver_searcher
 #  - stats
   - make
