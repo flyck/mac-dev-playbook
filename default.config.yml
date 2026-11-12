@@ -48,14 +48,14 @@ homebrew_installed_packages:
   - wget
   - aspell
   - the_silver_searcher
-  - stats
+#  - stats
   - make
   - diffutils
   - emacs-plus@29
   - starship
-  - mactex
+#  - mactex
   - oven-sh/bun/bun
-  - discord
+#  - discord
 
 homebrew_taps:
   - d12frosted/emacs-plus
@@ -67,7 +67,7 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - firefox
-  - google-chrome
+#  - google-chrome
   - slack
   - iterm2
   - gimp
